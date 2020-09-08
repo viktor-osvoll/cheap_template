@@ -8,6 +8,8 @@
 		<link rel="stylesheet" href="{{ site.theme.link }}/style.css" type="text/css" media="screen" />
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		{# Bootstrap #}
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="author" href="{{ site.theme.link }}/humans.txt" />
 		<link rel="pingback" href="{{ site.pingback_url }}" />
@@ -25,14 +27,16 @@
 	<body class="{{body_class}}" data-template="base.twig">
 
         {% block header %}
-			<header id="site-header" class="full-width">
+			<header id="site-header" style="background-color: white;" class="full-width">
                 {% include 'layout/header.twig' %}
 			</header>
         {% endblock %}
 
 		<section id="site-content" role="main" class="content-wrapper">
             {% block content %}
-				Sorry, no content
+				<div class="container">
+					{% include 'layout/front-page.twig' %}
+				</div>
             {% endblock %}
 		</section>
 

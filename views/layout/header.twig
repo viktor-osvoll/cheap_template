@@ -1,8 +1,70 @@
-<div class="wrapper">
-    <h1 class="hdr-logo" role="banner">
+<div class="wrapper" id="myHeader">
+<h1 class="logo">Lg-o</h1>
+    <ul class="nav justify-content-end" style="margin-top: -4%;">
+  <li class="nav-item">
+    <a class="nav-link active" href="{{site.url}}">Intro</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Om</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Tjänster</a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link" href="#">Process</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Testimonals</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Kontakt</a>
+  </li>
+</ul>
+</div>
+
+<style>
+
+.logo{
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    font-family: italic;
+    text-align: left;
+}
+
+.nav-link:hover{
+    border-bottom: 2px solid #7BE4DF;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+</style>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+{# <h1 class="hdr-logo" role="banner">
         <a class="hdr-logo-link" href="{{site.url}}" rel="home">{{site.name}}</a>
     </h1>
     <nav id="nav-main" class="nav-main" role="navigation">
         {% include "navigation/primary.twig" with {'menu': menu.get_items} %}
-    </nav><!-- #nav-main -->
-</div>
+    </nav><!-- #nav-main --> #}

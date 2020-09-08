@@ -2,6 +2,24 @@
 
 {% block content %}
     <div class="template-home">
-        Home Page
+        {#  {{dump(fields)}} #}
+        <div class="container">
+        
+     {% for field in fields.flexible_content %}
+         <h1 class="site-title col-8" style="font-size: 85px; font-family: italic; text-align: left;">{{ field.title }}</h1>
+          <img style="width: 100%; margin: 0; " class="header_picture" src="{{ Image(field.header_image) }}" />
+    {% endfor %}
+
+  {{tests.content}}
+  {{tests.title}}
+  {{dump(tests.flexible_about)}}
+
+  
+    {% for test in tests.flexible_about %}
+      <h1>{{ test.section_text }}</h1>
+       <img class="about_image" src="{{ Image(test.about_image) }}" />
+    {% endfor %}
+      </div>
     </div>
 {% endblock %}
+

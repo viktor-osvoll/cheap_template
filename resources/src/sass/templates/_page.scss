@@ -2,6 +2,7 @@
 
     .article-body > * {
         //@include content-container();
+        -webkit-column-rule-color: red;
     }
 
     .article-title,

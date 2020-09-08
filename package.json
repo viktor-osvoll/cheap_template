@@ -33,9 +33,9 @@
 		"cssnano": "^4.1.10",
 		"extract-text-webpack-plugin": "^4.0.0-beta.0",
 		"file-loader": "^2.0.0",
+		"gulp-sass": "^4.1.0",
 		"jquery": "^3.3.1",
 		"mini-css-extract-plugin": "^0.9.0",
-		"node-sass": "^4.9.4",
 		"postcss-loader": "^3.0.0",
 		"sass-loader": "^7.1.0",
 		"style-loader": "^0.23.1",
@@ -46,7 +46,10 @@
 		"webpack-shell-plugin": "^0.5.0"
 	},
 	"dependencies": {
-		"lodash": "^4.17.15"
+		"gulp": "^4.0.2",
+		"gulp-plumber": "^1.2.1",
+		"lodash": "^4.17.15",
+		"node-sass": "^4.14.1"
 	},
 	"keywords": [],
 	"postcss": {

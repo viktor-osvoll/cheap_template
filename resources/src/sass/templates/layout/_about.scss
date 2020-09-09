@@ -1,0 +1,51 @@
+.outside-loop{
+    margin-left: 6% !important;
+}
+
+.about-section{
+    width: 27vw;
+    text-align: justify;
+    text-justify: inter-word;
+    
+
+    .about-title{
+        font-size: 20px;
+        color: #333333;
+        width: 25vw;
+    }
+
+    .about-body{
+        width: 25vw;
+    }
+
+    .about-image{
+        width: 25vw;
+    }
+}
+.hej{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-text{
+    text-align: center;
+    font-family: italic;
+    width: 70vw;
+    margin-left: 15vw;
+    letter-spacing: 0;
+    font-size: 50px;
+    font-family: italic;
+}
+
+.about-button{
+    background-color: #164157;
+    color: #7BE4DF;
+    padding: 1%;
+    border-radius: 0;    
+    border: none;
+}
+
+.about-button:hover{
+    background-color: #7BE4DF;
+    color: #164157;
+}

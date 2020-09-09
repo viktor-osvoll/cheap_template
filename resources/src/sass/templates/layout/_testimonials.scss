@@ -1,0 +1,49 @@
+
+
+.testimonials{
+    height: 100vh;
+    background-color:#7BE4DF;
+}
+
+.testimonials-text h3{
+    // position
+    margin-top: 20vh;
+    margin-left: 10vw;
+
+    // looks
+    font-size: 60px;
+    color: white;
+    
+}
+
+
+.testimonials-content{
+    margin-top: 20vh;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 30vw;
+    height: 50vh;
+}
+
+
+.review{
+    // position
+    display: inline-block; 
+    margin-left: 10%;
+    // looks
+    background-color: white;
+    width: 20vw;
+    height: 45vh;
+    padding: 5%;
+    
+    
+    
+}
+.review p{
+   width: 15vw;
+   white-space: pre-line;
+   font-size: 75%;
+   color: rgb(88, 88, 88);
+}
+

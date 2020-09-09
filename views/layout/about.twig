@@ -1,0 +1,26 @@
+{% block about %}
+
+<div class="row outside-loop" style="max-width: 90vw; margin:auto;">
+
+   {% for field in fields.flexible_content %}
+<div class="col-md-4">
+    <div class="about-section">
+        <h5 class="about-title">{{ field.about_title }}</h5>
+        <p class="about-body">{{ field.about_body }}</p>
+        <img src="{{ Image(field.about_image) }}" class="about-image">
+    </div>
+</div>
+    {% endfor %}
+</div>
+
+
+   {% for field in fields.flexible_content %}
+        <h2 class="about-text">{{ field.about_text }}</h2>
+        {% if ( field.about_text )%}
+        <div class="hej">
+        <button type="button" class="btn btn-primary about-button">{{ field.about_button }}</button>
+        {% endif %}
+        </div>
+   {% endfor %}
+
+{% endblock %}

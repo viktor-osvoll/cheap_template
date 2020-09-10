@@ -1,0 +1,48 @@
+.template-form{
+    background-color:#7BE4DF1A;
+    width: 99vw;
+       
+}
+
+.Form-section{
+    width: 30vw;
+    height: 100vh;
+    margin-top: 10vh;
+    
+    
+    
+}
+input[type=text]{
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 0px;
+    background: none;
+    box-shadow: none;
+    
+}
+
+
+.Form-text{
+    margin-top: 10vh;
+}
+
+.form-check-label{
+    font-weight: 100;
+   
+}
+.radio-btn{
+    border: 1px solid black;
+    padding-left: 2vw;
+}
+.Form-input-disclamer{
+    font-size:12px;
+}
+input[type=submit]{
+    background-color: #164157 ;
+    width: 100%;
+    color: #7BE4DF;
+}
+input[type=submit]:hover{
+    background-color: #7BE4DF;
+    color: #164157;
+}

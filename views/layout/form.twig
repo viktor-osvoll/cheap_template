@@ -1,28 +1,35 @@
 
 {% block form %}
-<div class="container">
+<div class="template-form">
 
-    <div class="template-form row">
+    <div class="row">
 
         <div class="Form-text col-6">
             <h3 class="Form-text-header-content">Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</h3>
             <p class="Form-text-lower-content"> Vivamus suscipit tortor eget felis porttitor volutpat. Cras ultricies ligula sed magna dictum porta. Curabitur aliquet quam id dui posuere blandit. Nulla porttitor accumsan tincidunt. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
         </div>
-        <div class="Form-inputs col-6">
+        <div class="Form-section col-6">
             <form>
-                <input type="text" name="FirsyName" id="FirstName" placeholder="Name">
+                <input type="text" name="FirsyName" id="FirstName" placeholder="Name" class="form-input">
                     <br>
-                <input type="text" name="LastName" id="LastName" placeholder="Lastname">
+                <input type="text" name="LastName" id="LastName" placeholder="Lastname" class="form-input">
                     <br>
-                <input type="email" name="Email" id="Email" placeholder="Email">
+                <input type="text" name="Email" id="Email" placeholder="Email" class="form-input">
                     <br>
-                <input type="text" name="Number" id="Number" placeholder="Number">
+                <input type="text" name="Number" id="Number" placeholder="Number" class="form-input">
                     <br>
                 <input type="text" name="Message" id="Message" placeholder="Message">
                     <br>
-                <div class="radibtn-section">
-                    <label for="Confirm"> Proin eget tortor risus. Mauris blandit aliquet elit </label>
-                    <input type="radio" name="Confirm" id="Confirm">
+                    
+                <div class="radio-btn">
+                    <input 
+                    class="form-check-input" type="radio"                        name="exampleRadios" 
+                    id="exampleRadios1" 
+                    value="option1" 
+                    checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        Proin eget tortor risus. Mauris blandit aliquet elit
+                    </label>
                 </div>
                 <p class="Form-input-disclamer">Cras ultricies ligula sed magna dictum porta. Proin eget tortor risus. Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
                 <input type="submit" name="submit" id="submit" value="Submit">
@@ -30,5 +37,6 @@
         </div>
     </div>
 </div>
+
 
 {% endblock %}

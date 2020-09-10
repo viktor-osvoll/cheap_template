@@ -34,8 +34,8 @@
                 {% include 'layout/header.twig' %}
 			</header>
         {% endblock %}
-
-		{# <section style="overflow:hidden;" id="site-content" role="main" class="content-wrapper">
+ 
+		<section id="site-content" role="main" class="content-wrapper">
             {% block content %}
 				<div class="container">
 					{% include 'layout/front-page.twig' %}
@@ -50,17 +50,26 @@
 				{% include 'layout/about.twig' %}
 			{% endblock %}
 
+			{% block services %}
+				{%  include 'layout/services.twig' %}
+			{% endblock %}
+
+		
+
 			{% block testimonials %}
 				{% include 'layout/testimonials.twig' %}
 			{% endblock %}
 
-			{% block form %}
+				{% block form %}
 				{% include 'layout/form.twig' %}
 			{% endblock %}
- #}
-			{% block process %}
+
+		{# 	{% block process %}
 				{% include 'layout/process.twig' %}
-			{% endblock %}
+			{% endblock %} #}
+			
+			
+ 
 		</section>
 
 		{% block footer %}

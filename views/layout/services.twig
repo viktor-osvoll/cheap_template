@@ -1,0 +1,25 @@
+{% block services %}
+
+<section class="services">
+{# <h4 class="service-placeholder">Tjänster</h4> #}
+ {% for field in fields.flexible_content %}
+<h1 class="service-headline">{{ field.service_headline }}</h1>
+{% endfor %}
+
+<div class="row">
+
+ {% for field in fields.flexible_content %}
+ {% if (field.service_image) %}
+<div class="col-md-4">
+    <div class="service-section">
+        <img src="{{ Image(field.service_image) }}" class="service-image">
+        <h5 class="service-title">{{ field.service_title }}</h5>
+        <p class="service-body">{{ field.service_body }}</p>
+    </div>
+</div>
+{% endif %}
+    {% endfor %}
+
+</div>
+</section>
+{% endblock %}

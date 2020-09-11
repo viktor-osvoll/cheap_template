@@ -1,0 +1,121 @@
+#Carousel{
+    margin-top: 15vh;
+    height: 70vh;
+}
+
+.carousel-item{
+    opacity: 0;
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+    transition-delay: 0.4s;
+    height: 70vh;
+    
+  }
+  .carousel-fade .carousel-inner .active {
+    opacity: 1;
+  }
+  .carousel-fade .carousel-inner .active.left,
+  .carousel-fade .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+  }
+
+
+
+
+.slider-buttons{
+    justify-content: start;
+}
+
+.slider-buttons li{
+    background-color: black;
+    
+}
+
+.slider-button-one{
+    border-bottom: 1px solid lightgray;
+    text-decoration: none;
+    color: black;
+    height: 5vh;
+    margin-right: 1%;
+}
+
+.slider-button-two{
+    border-bottom: 1px solid lightgray;
+    text-decoration: none;
+    color: black;
+    height: 5vh;
+    margin-right: 1%;
+}
+
+.slider-button-three{
+    border-bottom: 1px solid lightgray;
+    text-decoration: none;
+    color: black;
+    height: 5vh;
+}
+
+.slider-buttons a:hover{
+    color: black;
+    border-bottom: 1px solid black;
+    text-decoration: none;
+}
+
+.slider-buttons .active{
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+.slider-one-text{
+    padding: 0% 0% 0% 5%;
+    max-width: 50vw;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.slider-one-image{
+    max-width: 40vw;
+    padding-left: 10%;
+
+    img{
+        width: 200%;
+        height: 50vh;
+    }
+}
+
+.slider-two-text{
+    padding: 0% 0% 0% 5%;
+    max-width: 50vw;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.slider-two-image{
+    max-width: 40vw;
+    padding-left: 10%;
+
+    img{
+        width: 200%;
+        height: 50vh;
+    }
+}
+
+.slider-three-text{
+    padding: 0% 0% 0% 5%;
+    max-width: 50vw;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.slider-three-image{
+    max-width: 40vw;
+    padding-left: 10%;
+
+    img{
+        width: 200%;
+        height: 50vh;
+    }
+}

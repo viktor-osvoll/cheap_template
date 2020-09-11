@@ -27,7 +27,7 @@
 
 	</head>
 
-	<body class="{{body_class}}" data-template="base.twig">
+	<body class="{{body_class}}" data-template="base.twig" style="overflow-x: hidden;">
 
         {% block header %}
 			<header id="site-header" class="full-width">
@@ -69,7 +69,7 @@
 			{% endblock %} #}
 			
 			
- 
+			</div>
 		</section>
 
 		{% block footer %}
@@ -79,7 +79,7 @@
 
 			{{ function('wp_footer') }}
 		{% endblock %}
-		</div>
+		
 	</body>
 
 </html>

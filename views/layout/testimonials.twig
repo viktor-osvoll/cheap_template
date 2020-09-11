@@ -1,5 +1,11 @@
 {% block testimonials %}
 
+
+    {% for field in fields.flexible_content %}
+		 <img src="{{ Image(field.full_width_image) }}">   
+	{% endfor %}
+	
+
     <div class="testimonials">
 
     <div class="row">
